@@ -202,7 +202,8 @@ export default function Play() {
         {/* Header */}
         <div className="server-header">
           <div className="server-logo">
-            <img src="/img/logo2.png" alt="Logo" />
+            <img src={`${import.meta.env.BASE_URL}img/logo2.png`} alt="Logo" />
+
           </div>
           <div className="server-info">
             <div className="server-name">

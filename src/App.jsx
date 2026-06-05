@@ -8,7 +8,8 @@ import Play from './pages/Play'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/AppSolsticeRp">
+
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

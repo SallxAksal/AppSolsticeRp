@@ -10,7 +10,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer-brand">
 <div className="footer-logo">
-              <img src="/img/logo2.png" alt="Solstice RP" style={{width: '36px', height: '36px', objectFit: 'contain'}} />
+              <img src={`${import.meta.env.BASE_URL}img/logo2.png`} alt="Solstice RP" style={{width: '36px', height: '36px', objectFit: 'contain'}} />
+
               <div>
                 <div className="footer-logo-name">SOLSTICE</div>
                 <div className="footer-logo-sub">ROLEPLAY</div>

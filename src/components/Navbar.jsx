@@ -29,7 +29,8 @@ export default function Navbar() {
       <div className="navbar-inner">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-<img src="/img/logo2.png" alt="Solstice RP" className="logo-icon" />
+<img src={`${import.meta.env.BASE_URL}img/logo2.png`} alt="Solstice RP" className="logo-icon" />
+
           <div className="logo-text">
             <span className="logo-name">SOLSTICE</span>
             <span className="logo-sub">ROLEPLAY</span>

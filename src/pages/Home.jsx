@@ -10,7 +10,8 @@ export default function Home() {
       <Hero />
       <Stats />
       <div style={{textAlign: 'center', padding: '40px 0'}}>
-        <img src="/img/logo.png" alt="Solstice RP Logo" style={{maxWidth: '200px', height: 'auto'}} />
+        <img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="Solstice RP Logo" style={{maxWidth: '200px', height: 'auto'}} />
+
       </div>
       <Features />
       <SystemSpecs />

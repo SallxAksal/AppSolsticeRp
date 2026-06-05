@@ -7,85 +7,97 @@ const jobs = [
   { 
     title: 'Pemerintah', 
     category: 'Pemerintah', 
-    icon: <img src="/public/img/govSrp.png" alt="Pemerintah" width={100} height={100} />,
+    icon: <img src={`${import.meta.env.BASE_URL}img/govSrp.png`} alt="Pemerintah" width={100} height={100} />,
+
     desc: 'Bekerja sebagai aparatur negara untuk mengelola kota dan membantu operasional layanan publik.', 
     requirements: ['Surat Berkelakuan Baik (SKWB)', 'Kartu Tanda Penduduk (KTP)', 'Tidak memiliki catatan kriminal', 'Surat Sehat', 'Lolos tes seleksi'] 
   },
   { 
     title: 'Polisi', 
     category: 'Pemerintah', 
-    icon: <img src="/public/img/polSrp.png" alt="Pemerintah" width={100} height={100} />,
+    icon: <img src={`${import.meta.env.BASE_URL}img/polSrp.png`} alt="Pemerintah" width={100} height={100} />,
+
     desc: 'Menegakkan hukum, menangkap pelaku kriminal, dan menjaga keamanan warga di seluruh kota.', 
     requirements: ['Surat Berkelakuan Baik (SKWB)', 'Kartu Tanda Penduduk (KTP)', 'Tidak memiliki catatan kriminal','Surat Sehat', 'Lolos tes seleksi'] 
   },
   { 
     title: 'EMS / Paramedik', 
     category: 'Pemerintah', 
-    icon: <img src="/public/img/emsSrp.png" alt="Pemerintah" width={100} height={100} />,  
+    icon: <img src={`${import.meta.env.BASE_URL}img/emsSrp.png`} alt="Pemerintah" width={100} height={100} />,
+
     desc: 'Memberikan pertolongan medis kepada pemain yang terluka dan menangani situasi darurat.',  
     requirements: ['Surat Berkelakuan Baik (SKWB)', 'Kartu Tanda Penduduk (KTP)', 'Tidak memiliki catatan kriminal', 'Surat Sehat', 'Lolos tes seleksi'] 
   },
   { 
     title: 'Mekanik', 
     category: 'Legal', 
-    icon: <img src="/public/img/mechSrp.png" alt="Legal" width={100} height={100} />, 
+    icon: <img src={`${import.meta.env.BASE_URL}img/mechSrp.png`} alt="Legal" width={100} height={100} />,
+
     desc: 'Memperbaiki kendaraan, melakukan tuning, dan mengelola operasional bengkel.', 
     requirements: ['Surat Berkelakuan Baik (SKWB)', 'Kartu Tanda Penduduk (KTP)', 'Memiliki SIM', 'Memiliki STNK', 'Surat Sehat', 'Lolos tes seleksi'] 
   },
   { 
     title: 'Pedagang', 
     category: 'Legal', 
-    icon: <img src="/public/img/selSrp.png" alt="Legal" width={100} height={100} />,  
+    icon: <img src={`${import.meta.env.BASE_URL}img/selSrp.png`} alt="Legal" width={100} height={100} />,
+
     desc: 'Menjalankan bisnis jual beli barang dan melayani kebutuhan pelanggan.',  
     requirements: ['Surat Berkelakuan Baik (SKWB)', 'Kartu Tanda Penduduk (KTP)', 'Surat Sehat', 'Lolos tes seleksi'] 
   },
   { 
     title: 'Sopir Taksi', 
     category: 'Legal', 
-    icon: <img src="/public/img/taxSrp.png" alt="Legal" width={100} height={100} />, 
+    icon: <img src={`${import.meta.env.BASE_URL}img/taxSrp.png`} alt="Legal" width={100} height={100} />,
+
     desc: 'Mengantar penumpang ke berbagai lokasi dan membantu pemain mengenal wilayah kota.', 
     requirements: ['Surat Berkelakuan Baik (SKWB)', 'Kartu Tanda Penduduk (KTP)', 'Memiliki SIM', 'Memiliki STNK', 'Surat Sehat', 'Lolos tes seleksi'] 
   },
   { 
     title: 'Hight table', 
     category: 'Kriminal', 
-    icon: <img src="/public/img/logoD.png" alt="Kriminal" width={100} height={100} />, 
+    icon: <img src={`${import.meta.env.BASE_URL}img/logoD.png`} alt="Kriminal" width={100} height={100} />, 
     desc: 'Organisasi kriminal elit tingkat tinggi yang mengendalikan berbagai jaringan ilegal dari balik layar. Berperan sebagai pengambil keputusan utama dengan pengaruh besar terhadap struktur dunia kriminal.',  
+
     requirements: ['Memiliki minimal 15 anggota aktif.', 'Wajib memiliki identitas outfit', 'Wajib memiliki latar cerita yang kuat', 'Wajib memiliki struktur organisasi yang jelas', 'Wajib memiliki rencana aksi kriminal yang terperinci'] 
   },
   { 
     title: 'Mafia', 
     category: 'Kriminal', 
-    icon: <img src="/public/img/logoD.png" alt="Kriminal" width={100} height={100} />,  
+    icon: <img src={`${import.meta.env.BASE_URL}img/logoD.png`} alt="Kriminal" width={100} height={100} />,  
     desc: 'Organisasi kriminal elit yang menguasai bisnis ilegal dengan struktur dan strategi tingkat tinggi.', 
+
     requirements: ['Memiliki minimal 15 anggota aktif.', 'Wajib memiliki identitas outfit', 'Wajib memiliki latar cerita yang kuat', 'Wajib memiliki struktur organisasi yang jelas', 'Wajib memiliki rencana aksi kriminal yang terperinci'] 
   },
   { 
     title: 'Yakuza', 
     category: 'Kriminal', 
-    icon: <img src="/public/img/logoD.png" alt="Kriminal" width={100} height={100} />, 
-    desc: 'Kelompok kriminal terorganisir dengan disiplin tinggi dan fokus pada kontrol bisnis ilegal.', 
+    icon: <img src={`${import.meta.env.BASE_URL}img/logoD.png`} alt="Kriminal" width={100} height={100} />, 
+    desc: 'Kelompok kriminal terorganisir dengan disiplin tinggi dan fokus pada kontrol bisnis ilegal.',
+
     requirements: ['Memiliki minimal 15 anggota aktif.', 'Wajib memiliki identitas outfit', 'Wajib memiliki latar cerita yang kuat', 'Wajib memiliki struktur organisasi yang jelas', 'Wajib memiliki rencana aksi kriminal yang terperinci'] 
   },
   { 
     title: 'Cartel', 
     category: 'Kriminal', 
-    icon: <img src="/public/img/logoD.png" alt="Kriminal" width={100} height={100} />, 
+    icon: <img src={`${import.meta.env.BASE_URL}img/logoD.png`} alt="Kriminal" width={100} height={100} />, 
     desc: 'Organisasi kriminal besar yang mengendalikan distribusi barang ilegal dengan jaringan luas.',  
+
     requirements: ['Memiliki minimal 15 anggota aktif.', 'Wajib memiliki identitas outfit', 'Wajib memiliki latar cerita yang kuat', 'Wajib memiliki struktur organisasi yang jelas', 'Wajib memiliki rencana aksi kriminal yang terperinci'] 
   },
   { 
     title: 'Motor Club (MC)', 
     category: 'Kriminal', 
-    icon: <img src="/public/img/logoD.png" alt="Kriminal" width={100} height={100} />,  
+    icon: <img src={`${import.meta.env.BASE_URL}img/logoD.png`} alt="Kriminal" width={100} height={100} />,  
     desc: 'Kelompok berbasis kendaraan yang fokus pada kontrol wilayah dan aktivitas ilegal terorganisir.', 
+
     requirements: ['Memiliki minimal 15 anggota aktif.', 'Wajib memiliki identitas outfit', 'Wajib memiliki latar cerita yang kuat', 'Wajib memiliki struktur organisasi yang jelas', 'Wajib memiliki rencana aksi kriminal yang terperinci'] 
   },
   { 
     title: 'Street Gang', 
     category: 'Kriminal', 
-    icon: <img src="/public/img/logoD.png" alt="Kriminal" width={100} height={100} />, 
+    icon: <img src={`${import.meta.env.BASE_URL}img/logoD.png`} alt="Kriminal" width={100} height={100} />,  
     desc: 'Menguasai wilayah, menjalankan aktivitas ilegal skala jalanan, dan mempertahankan area dari gang lain.',  
+
     requirements: ['Memiliki minimal 15 anggota aktif.', 'Wajib memiliki identitas outfit', 'Wajib memiliki latar cerita yang kuat', 'Wajib memiliki struktur organisasi yang jelas', 'Wajib memiliki rencana aksi kriminal yang terperinci'] 
   },
 ]
@@ -106,7 +118,8 @@ export default function Jobs() {
 <div className="jobs-hero">
         <div className="jobs-hero-orb" />
         <div style={{textAlign: 'center', marginBottom: '40px'}}>
-<img src="/img/logo.png" alt="Solstice RP Logo" style={{maxWidth: '180px', height: 'auto'}} />
+<img src={`${import.meta.env.BASE_URL}img/logo.png`} alt="Solstice RP Logo" style={{maxWidth: '180px', height: 'auto'}} />
+
         </div>
         <div className="container">
           <p className="section-label" style={{ textAlign: 'center' }}>Karir & Pekerjaan</p>

@@ -35,7 +35,8 @@ export default function Hero() {
               </svg>
               Join Discord
             </a>
-<a href="/play" className="btn-secondary">
+          <a href={`${import.meta.env.BASE_URL}play`} className="btn-secondary">
+
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <polygon points="5,3 19,12 5,21"/>
             </svg>
@@ -72,7 +73,8 @@ export default function Hero() {
 
         {/* RIGHT: Logo Emblem */}
         <div className="hero-emblem">
-          <img src="/img/logo2.png" alt="Solstice RP Logo" />
+          <img src={`${import.meta.env.BASE_URL}img/logo2.png`} alt="Solstice RP Logo" />
+
           <p className="hero-emblem-tagline">INTEGRITY &amp; IMMERSION</p>
         </div>
 
